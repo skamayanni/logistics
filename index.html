@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - SwiftShip Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Logis
+  * Template URL: https://bootstrapmade.com/logis-bootstrap-logistics-website-template/
+  * Updated: Apr 08 2026 with Bootstrap v5.3.8
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">SwiftShip</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Home<br></a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="get-a-quote.html">Get a Quote</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/world-dotted-map.png" alt="" class="hero-bg" data-aos="fade-in">
+
+      <div class="container">
+        <div class="row gy-4 d-flex justify-content-between">
+          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+            <h2 data-aos="fade-up">Your Lightning Fast Delivery Partner</h2>
+            <p data-aos="fade-up" data-aos-delay="100" class="aos-init aos-animate">
+              Our experienced professionals are equipped to handle your complete transportation needs. Let Apexbit Cargo
+              bring simplicity to your logistics by leveraging our assets and preferred carrier network.
+            </p>
+
+            <form onsubmit="return checkTrackID()" class="form-search d-flex align-items-stretch mb-3">
+              <input type="text" id="trackInput" class="form-control" placeholder="Track ID" required>
+              <button type="submit" class="btn btn-primary">Search</button>
+            </form>
+            <div id="errorMessage" class="alert alert-danger mt-3 d-none" role="alert">
+              <strong>INVALID INPUT!</strong> No records found.
+            </div>
+
+            <script>
+              function checkTrackID() {
+                const userInput = document.getElementById("trackInput").value.trim();
+                const error = document.getElementById("errorMessage");
+
+                if (userInput === "1439027785") {
+                  window.location.href = "tracking.html";
+                } else {
+                  error.classList.remove("d-none");
+                }
+
+                return false;
+              }
+            </script>
+
+            <div class="row gy-4" data-aos="fade-up" data-aos-delay="300">
+
+              <div class="col-lg-3 col-6">
+                <div class="stats-item text-center w-100 h-100">
+                  <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="0"
+                    class="purecounter">232</span>
+                  <p>Clients</p>
+                </div>
+              </div><!-- End Stats Item -->
+
+              <div class="col-lg-3 col-6">
+                <div class="stats-item text-center w-100 h-100">
+                  <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="0"
+                    class="purecounter">521</span>
+                  <p>Projects</p>
+                </div>
+              </div><!-- End Stats Item -->
+
+              <div class="col-lg-3 col-6">
+                <div class="stats-item text-center w-100 h-100">
+                  <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="0"
+                    class="purecounter">1453</span>
+                  <p>Support</p>
+                </div>
+              </div><!-- End Stats Item -->
+
+              <div class="col-lg-3 col-6">
+                <div class="stats-item text-center w-100 h-100">
+                  <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="0"
+                    class="purecounter">32</span>
+                  <p>Workers</p>
+                </div>
+              </div><!-- End Stats Item -->
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
+            <img src="assets/img/hero-img.svg" class="img-fluid mb-3 mb-lg-0" alt="">
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- Featured Services Section -->
+    <section id="featured-services" class="featured-services section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon flex-shrink-0"><i class="fa-solid fa-cart-flatbed"></i></div>
+            <div>
+              <h4 class="title">Fast & Reliable Shipping</h4>
+              <p class="description">Enjoy dependable delivery services with timely pickups, secure handling, and
+                real-time shipment tracking from start to finish.</p>
+              <a href="#" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon flex-shrink-0"><i class="fa-solid fa-truck"></i></div>
+            <div>
+              <h4 class="title">Worldwide Logistics</h4>
+              <p class="description">We provide domestic and international shipping solutions tailored to businesses and
+                individuals of every size.</p>
+              <a href="#" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon flex-shrink-0"><i class="fa-solid fa-truck-ramp-box"></i></div>
+            <div>
+              <h4 class="title">Safe Package Handling</h4>
+              <p class="description">Every shipment is professionally packed, carefully handled, and delivered safely to
+                its destination.</p>
+              <a href="#" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Featured Services Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6 position-relative align-self-start order-lg-last order-first" data-aos="fade-up"
+            data-aos-delay="200">
+            <img src="assets/img/about.jpg" class="img-fluid" alt="">
+            <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn"></a>
+          </div>
+
+          <div class="col-lg-6 content order-last  order-lg-first" data-aos="fade-up" data-aos-delay="100">
+            <h3>About SwiftShip Logistics</h3>
+            <p>
+              SwiftShip Logistics is a trusted shipping and logistics company committed to providing fast, secure, and
+              affordable delivery services. From local parcels to international freight, we ensure every shipment is
+              handled with professionalism and delivered on time.
+            </p>
+            <ul>
+              <li>
+                <i class="bi bi-diagram-3"></i>
+                <div>
+                  <h5>Reliable Delivery Network</h5>
+                  <p>Extensive transportation coverage designed to keep your shipments moving quickly and efficiently.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <i class="bi bi-fullscreen-exit"></i>
+                <div>
+                  <h5>Real-Time Tracking</h5>
+                  <p>Track every shipment with live updates from pickup through final delivery.</p>
+                </div>
+              </li>
+              <li>
+                <i class="bi bi-broadcast"></i>
+                <div>
+                  <h5>Customer Support</h5>
+                  <p>Friendly logistics specialists ready to assist you with shipping, tracking, and delivery inquiries.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span>Our Services<br></span>
+        <h2>Our ServiceS</h2>
+        <p>Fast, secure, and reliable shipping solutions backed by real-time tracking, affordable pricing, and dedicated
+          customer support you can count on.
+        </p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="card">
+              <div class="card-img">
+                <img src="assets/img/service-1.jpg" alt="" class="img-fluid">
+              </div>
+              <h3>Storage</h3>
+              <p>Our secure storage facilities provide short-term and long-term warehousing solutions with 24/7
+                monitoring, inventory management, and climate-controlled options to keep your goods safe.</p>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="card">
+              <div class="card-img">
+                <img src="assets/img/service-2.jpg" alt="" class="img-fluid">
+              </div>
+              <h3><a href="#" class="stretched-link">Logistics</a></h3>
+              <p>We deliver customized logistics solutions that streamline transportation, inventory, and supply chain
+                operations, ensuring every shipment reaches its destination efficiently.</p>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="card">
+              <div class="card-img">
+                <img src="assets/img/service-3.jpg" alt="" class="img-fluid">
+              </div>
+              <h3><a href="#" class="stretched-link">Cargo</a></h3>
+              <p>Reliable cargo transportation for commercial and personal shipments with secure handling, customs
+                support, and real-time shipment tracking.</p>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="card">
+              <div class="card-img">
+                <img src="assets/img/service-4.jpg" alt="" class="img-fluid">
+              </div>
+              <h3><a href="#" class="stretched-link">Trucking</a></h3>
+              <p>Our nationwide trucking network offers dependable ground transportation with experienced drivers,
+                modern fleets, and real-time tracking for every shipment.</p>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="card">
+              <div class="card-img">
+                <img src="assets/img/service-5.jpg" alt="" class="img-fluid">
+              </div>
+              <h3>Packaging</h3>
+              <p>Expert packaging solutions that protect fragile, oversized, and valuable shipments while meeting
+                domestic and international shipping standards.</p>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="card">
+              <div class="card-img">
+                <img src="assets/img/service-6.jpg" alt="" class="img-fluid">
+              </div>
+              <h3><a href="#" class="stretched-link">Warehousing</a></h3>
+              <p>State-of-the-art warehousing facilities offering secure storage, inventory management, order
+                processing, and efficient distribution services.</p>
+            </div>
+          </div><!-- End Card Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Call To Action Section -->
+    <section id="call-to-action" class="call-to-action section dark-background">
+
+      <img src="assets/img/cta-bg.jpg" alt="">
+
+      <div class="container">
+        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-xl-10">
+            <div class="text-center">
+              <h3>Ready to Ship With Confidence?</h3>
+              <p>Whether you're sending a single package or managing large freight shipments,
+                SwiftShip Logistics is committed to delivering your cargo safely, securely,
+                and on time. Request a free quote today and experience fast, reliable
+                shipping services you can trust.</p>
+              <a class="cta-btn" href="#">Call To Action</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Call To Action Section -->
+
+    <!-- Features Section -->
+    <section id="features" class="features section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span>Features</span>
+        <h2>Features</h2>
+        <p>Discover why businesses and individuals trust SwiftShip Logistics for secure, fast, and reliable shipping
+          solutions across local and international destinations.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4 align-items-center features-item">
+          <div class="col-md-5 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
+            <img src="assets/img/features-1.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7" data-aos="fade-up" data-aos-delay="100">
+            <h3>Reliable Delivery for Every Shipment</h3>
+            <p class="fst-italic">
+              Whether you're shipping personal packages or commercial freight, SwiftShip Logistics ensures every
+              delivery is handled with care, precision, and on-time performance.
+            </p>
+            <ul>
+              <li><i class="bi bi-check"></i><span> Real-time shipment tracking.</span></li>
+              <li><i class="bi bi-check"></i> <span>Safe and secure package handling.</span>
+              </li>
+              <li><i class="bi bi-check"></i> <span>Fast domestic and international delivery.</span></li>
+            </ul>
+          </div>
+        </div><!-- Features Item -->
+
+        <div class="row gy-4 align-items-center features-item">
+          <div class="col-md-5 order-1 order-md-2 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+            <img src="assets/img/features-2.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7 order-2 order-md-1" data-aos="fade-up" data-aos-delay="200">
+            <h3>Convenient Online Shipment Management</h3>
+            <p class="fst-italic">
+              Manage your shipments effortlessly through our easy-to-use online platform. Schedule pickups, monitor
+              delivery progress, and receive instant shipment updates anytime.
+            </p>
+            <ul>
+              <li><i class="bi bi-check"></i><span> Book shipments online in minutes</span></li>
+              <li><i class="bi bi-check"></i> <span>Receive live delivery notifications</span>
+              </li>
+              <li><i class="bi bi-check"></i> <span>Easy access to shipment history</span></li>
+            </ul>
+          </div>
+        </div><!-- Features Item -->
+
+        <div class="row gy-4 align-items-center features-item">
+          <div class="col-md-5 d-flex align-items-center" data-aos="zoom-out">
+            <img src="assets/img/features-3.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7" data-aos="fade-up">
+            <h3>Global Shipping Solutions You Can Trust</h3>
+            <p>From local deliveries to international freight, our extensive logistics network allows us to move cargo
+              quickly and efficiently across borders.</p>
+            <ul>
+              <li><i class="bi bi-check"></i> <span> Worldwide shipping coverage</span></li>
+              <li><i class="bi bi-check"></i><span> Customs clearance assistance</span>
+              </li>
+              <li><i class="bi bi-check"></i> <span>Air, sea, and ground freight options</span>.
+              </li>
+            </ul>
+          </div>
+        </div><!-- Features Item -->
+
+        <div class="row gy-4 align-items-center features-item">
+          <div class="col-md-5 order-1 order-md-2 d-flex align-items-center" data-aos="zoom-out">
+            <img src="assets/img/features-4.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7 order-2 order-md-1" data-aos="fade-up">
+            <h3>Advanced Port & Freight Operations</h3>
+            <p class="fst-italic">
+              Our partnerships with major ports and freight carriers enable us to provide efficient cargo handling,
+              streamlined transportation, and dependable international logistics services.
+            </p>
+            <p>
+              With a focus on speed, security, and transparency, SwiftShip Logistics helps businesses move goods
+              confidently through every stage of the global supply chain.
+            </p>
+          </div>
+        </div><!-- Features Item -->
+
+      </div>
+
+    </section><!-- /Features Section -->
+
+
+
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+
+        <!-- Company -->
+        <div class="col-lg-4 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">SwiftShip Logistics</span>
+          </a>
+
+          <p>
+            SwiftShip Logistics provides secure domestic and international
+            shipping solutions with real-time tracking, express delivery,
+            freight forwarding, and reliable customer support.
+          </p>
+
+          <div class="social-links d-flex mt-4">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Quick Links</h4>
+
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Track Shipment</a></li>
+            <li><a href="#">Get a Quote</a></li>
+            <li><a href="#">Shipping Rates</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="col-lg-3 col-6 footer-links">
+          <h4>Our Services</h4>
+
+          <ul>
+            <li><a href="#">Express Delivery</a></li>
+            <li><a href="#">International Shipping</a></li>
+            <li><a href="#">Air Freight</a></li>
+            <li><a href="#">Ocean Freight</a></li>
+            <li><a href="#">Package Tracking</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="col-lg-3 col-md-12 footer-contact">
+          <h4>Contact Us</h4>
+
+          <p>3000 Cardinal Street</p>
+          <p>Orange TX 77630</p>
+          <p>United States</p>
+
+          <p class="mt-4">
+            <strong>Phone:</strong>
+            <span>+1 (656) 236-3543</span>
+          </p>
+
+          <p>
+            <strong>Email:</strong>
+            <span>support@swiftship.com</span>
+          </p>
+
+          <p>
+            <strong>Hours:</strong>
+            <span>Mon - Sat | 8:00 AM - 7:00 PM</span>
+          </p>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="container copyright text-center mt-4">
+
+      <p>
+        © <span>2026</span>
+        <strong class="px-1 sitename">SwiftShip Logistics</strong>
+        <span>All Rights Reserved.</span>
+      </p>
+
+      <small>
+        Delivering Packages. Connecting Businesses. Worldwide.
+      </small>
+
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
