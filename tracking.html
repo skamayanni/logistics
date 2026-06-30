@@ -93,31 +93,41 @@
 
         <div class="row gy-4 pricing-item" data-aos="fade-up" data-aos-delay="100">
 
-          <div class="col-12">
+          <!-- Main Container -->
+          <div class="d-flex justify-content-between align-items-center flex-wrap w-100">
 
-            <div class="row align-items-center text-center">
+            <!-- LEFT SIDE -->
+            <div class="d-flex align-items-center">
 
-              <!-- Left -->
-              <div class="col-3">
+              <figure class="mb-0 me-3">
                 <img
                   src="https://png.pngtree.com/png-clipart/20211026/original/pngtree-cartoon-delivery-man-png-image_876933.png"
-                  class="img-fluid" style="width:100%; height:95px; margin-right:15px;">
-              </div>
+                  height="120">
+              </figure>
 
-              <!-- Middle -->
-              <div class="col-6">
-                <h3>Your Shipment is on it's way!</h3>
+              <div>
+
+                <h3><strong>Your Shipment is on it's way!</strong></h3>
 
                 <p><i class="bi bi-calendar3"></i> APRIL 17, 2027</p>
 
-                <p><i class="bi bi-geo-alt"></i> Premier Square, Finglas Road, Dublin</p>
+                <div>
+                  <p><i class="bi bi-geo-alt"></i> Premier Square, Finglas Road, Dublin</p>
+                </div>
+
               </div>
 
-              <!-- Right -->
-              <div class="col-3">
-                <img src="assets/img/service-5.jpg" class="img-fluid" style="max-height:100px;">
-                <h6 class="mt-2">Shipment_DNEHNTD9</h6>
-              </div>
+            </div>
+
+            
+            <!-- Bottom Row -->
+            <div class="text-center mt-4">
+
+              <img src="assets/img/service-5.jpg" class="package-img">
+
+              <h3 class="tracking-title mt-3">
+                Shipment_DNEHNTD9
+              </h3>
 
             </div>
 
@@ -128,40 +138,35 @@
       </div>
 
       <style>
-        h6 {
-          word-break: break-word;
-          overflow-wrap: break-word;
+        .right-section {
+          margin-left: 40px;
         }
 
-        .pricing-item {
-          padding: 15px;
+        .package-img {
+          width: 90%;
+          max-width: none;
+          height: 200px;
+          object-fit: cover;
+          display: block;
+          margin: 0 auto;
+          border-radius: 8px;
         }
 
-        .pricing-item img {
-          max-width: 100%;
+        .tracking-title {
+          margin-top: 12px;
         }
 
-        @media (max-width: 576px) {
+        .package-img {
+          width: 100%;
+          max-width: 350px;
+          height: auto;
+          display: block;
+          margin: 0 auto;
+        }
 
-          .pricing-item h4 {
-            font-size: 16px;
-          }
-
-          .pricing-item h6 {
-            font-size: 12px;
-          }
-
-          .pricing-item .bi {
-            font-size: 13px;
-          }
-
-          .pricing-item img:first-child {
-            width: 55px !important;
-          }
-
-          .pricing-item img:last-child {
-            max-width: 80px !important;
-          }
+        .tracking-title {
+          text-align: center;
+          margin-top: 15px;
         }
       </style>
 
