@@ -210,15 +210,17 @@
                 <!-- <h3><strong>Your Shipment is on it's way!</strong></h3> -->
                 <h3><strong> Your Shipment is Awaiting Security Tag</strong></h3>
 
-
-                 <!-- <p><i class="bi bi-calendar3"></i> July 06, 2026</p> -->
-                <p><i class="bi bi-calendar3"></i> July 09, 2026</p>
-
+                <div>
+                  <p>
+                    <i class="bi bi-calendar3"></i>
+                   <h6><strong id="current-date"></strong></h6>
+                  </p>
+                </div>
 
                 <!-- <div>
                   <p><i class="bi bi-geo-alt"></i>At origin hub, Marib Governorate, Yemen</p>
                 </div> -->
-               
+
                 <div>
                   <p><i class="bi bi-geo-alt"></i>At Processing hub, Northern Yemen</p>
                 </div>
@@ -462,11 +464,31 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
   <!-- Main JS File -->
+  <script>
+    function updateDate() {
+      const options = {
+        year: "numeric",
+        month: "long",
+        day: "numeric"
+      };
+
+      document.getElementById("current-date").textContent =
+        new Date().toLocaleDateString("en-US", options);
+    }
+
+    updateDate();
+
+    // Check every minute in case the date changes
+    setInterval(updateDate, 60000);
+  </script>
+
   <script src="assets/js/main.js"></script>
 
   <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
   <script src="language.js"></script>
+
+
 
 </body>
 
